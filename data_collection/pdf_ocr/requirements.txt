@@ -1,0 +1,5 @@
+jsonlines
+tqdm
+cleantext # Used for preprocessing and cleaning text data
+ipdb  # An interactive debugger for debugging Python code
+PyPDF2  # Used for working with PDF files
