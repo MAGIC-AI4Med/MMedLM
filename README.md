@@ -25,7 +25,7 @@ In this paper, we aim to develop an open-source, multilingual language model for
 [2023.2.20] We release [MMedBench](https://huggingface.co/datasets/Henrychur/MMedBench), a new multilingual medical multi-choice question-answering
 benchmark with rationale. Check out the leaderboard [here](https://henrychur.github.io/MultilingualMedQA/).
 
-![](assets\overview.png)
+![](assets/overview.png)
 
 ## Usage
 TODO
@@ -68,7 +68,7 @@ Here we show the main results of models' performance on MMedBench. For more deta
 - Open-source models first undergo training on the trainset of MMedBench before evaluate. 
 ### Case Study
 
-![](assets\case1.png)
+![](assets/case1.png)
 - A case between InternLM and MMedLM. MMedLM demonstrates superior performance in selecting the correct option. Furthermore, MMedLM frequently justifies its choices with accurate reasons. MMedLM accurately diagnoses ‘eosinophilic infiltration in the renal biopsy,’ subsequently applying
 its domain knowledge to identify these findings as indicative of toxic tubulointerstitial nephritis, leading to a
 precise diagnosis. 
