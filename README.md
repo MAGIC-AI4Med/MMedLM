@@ -7,7 +7,7 @@
 </div>
 
 
-The official codes for "Towards Building Multilingual Language Model for Medicine"
+The official codes for "Towards Building Multilingual Language Model for Medicine".
 
 ## Introduction
 In this paper, we aim to develop an open-source, multilingual language model for medicine. In general, we present the contribution from the following aspects: 
