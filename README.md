@@ -1,5 +1,5 @@
 # MMedLM
-The official codes for "Towards Building Multilingual Language Model for Medicine"
+The official codes for "Towards Building Multilingual Language Model for Medicine".
 
 ## Resources List
 Currently, we have released all of our data, code and model weights.
