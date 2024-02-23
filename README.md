@@ -28,7 +28,18 @@ benchmark with rationale. Check out the leaderboard [here](https://henrychur.git
 ![](assets/overview.png)
 
 ## Usage
-TODO
+### Environment
+In our experiments, we used A100 80 GB GPUs and the Slurm scheduling system. We provide a Slurm script to launch training. You can also remove the Slurm commands to run the code on a single machine.
+
+For dependencies, we used Pytorch 1.13 and Transformers 4.32. For LoRA fine-tune, it is also necessary to install the corresponding PEFT library.
+
+### Auto-regressive training on MMedC
+We provide all the code used for further training on MMedC. The codes are in the `pretrain` folder. You can check the [documentation](./pretrain/README.md) in the folder for how to use the codes.
+
+* Note that this step requires at least 8 A100 80GB GPUs and training for over a month.
+### Fine-tuning on MMedBench Trainset
+We provide all the code used for fine-tuning. We support 2 fine-tuning methods: Full-Model Fine-tuning and PEFT Fine-Tuning.  Both codes are in the `finetune` folder. You can check the [documentation](./finetune/README.md) in the folder for how to use the codes.
+
 
 ## Results
 Here we show the main results of models' performance on MMedBench. For more details, please check out our [paper](https://arxiv.org/abs/2402.13963).
