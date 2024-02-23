@@ -15,6 +15,8 @@ In this paper, we aim to develop an open-source, multilingual language model for
 2. **Benchmark.** To monitor the development of multilingual LLMs in medicine, we propose a new multilingual medical multi-choice question-answering benchmark with rationale, termed as MMedBench.
 3. **Model Evaluation.** We have assessed a number of popular LLMs on our benchmark, along with those further auto-regressive trained on MMedC, as a result, our final model, termed as MMedLM 2, with only 7B parameters, achieves superior performance compared to all other open-source models, even rivaling GPT-4 on MMedBench. 
 
+![](assets/overview.png)
+
 ## News
 [2024.2.21] Our pre-print paper is released ArXiv. Dive into our findings [here](https://arxiv.org/abs/2402.13963).
 
@@ -25,7 +27,6 @@ In this paper, we aim to develop an open-source, multilingual language model for
 [2023.2.20] We release [MMedBench](https://huggingface.co/datasets/Henrychur/MMedBench), a new multilingual medical multi-choice question-answering
 benchmark with rationale. Check out the leaderboard [here](https://henrychur.github.io/MultilingualMedQA/).
 
-![](assets/overview.png)
 
 ## Usage
 ### Environment
@@ -93,7 +94,7 @@ its domain knowledge to identify these findings as indicative of toxic tubuloint
 precise diagnosis. 
 
 ## TODO
-- [ ] Add documentation and code for model usage
+- [x] Add documentation and code for model usage
 - [ ] Add the Model Card
 - [ ] Add the Dataset Card
 
