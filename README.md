@@ -33,12 +33,15 @@ In our experiments, we used A100 80 GB GPUs and the Slurm scheduling system. We 
 
 For dependencies, we used Pytorch 1.13 and Transformers 4.37. For LoRA fine-tune, it is also necessary to install the corresponding PEFT library.
 
-### Auto-regressive training on MMedC
+### Auto-regressive Training on MMedC
 We provide all the code used for further training on MMedC. The codes are in the `pretrain` folder. You can check the [documentation](./pretrain/README.md) in the folder for how to use the codes.
 
 * Note that this step requires at least 8 A100 80GB GPUs and training for over a month.
 ### Fine-tuning on MMedBench Trainset
 We provide all the code used for fine-tuning. We support 2 fine-tuning methods: Full-Model Fine-tuning and PEFT Fine-Tuning.  Both codes are in the `finetune` folder. You can check the [documentation](./finetune/README.md) in the folder for how to use the codes.
+
+### Data Collection Pipeline
+We also release our Data Collection Pipeline, including codes of data filtering and Textbooks OCR. For OCR, you may need to install some extra dependencies. Please check out the **data_collection** folder for more details.
 
 
 ## Results
