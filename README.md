@@ -31,7 +31,7 @@ benchmark with rationale. Check out the leaderboard [here](https://henrychur.git
 ### Environment
 In our experiments, we used A100 80 GB GPUs and the Slurm scheduling system. We provide a Slurm script to launch training. You can also remove the Slurm commands to run the code on a single machine.
 
-For dependencies, we used Pytorch 1.13 and Transformers 4.32. For LoRA fine-tune, it is also necessary to install the corresponding PEFT library.
+For dependencies, we used Pytorch 1.13 and Transformers 4.37. For LoRA fine-tune, it is also necessary to install the corresponding PEFT library.
 
 ### Auto-regressive training on MMedC
 We provide all the code used for further training on MMedC. The codes are in the `pretrain` folder. You can check the [documentation](./pretrain/README.md) in the folder for how to use the codes.

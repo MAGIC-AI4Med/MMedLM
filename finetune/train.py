@@ -57,7 +57,7 @@ class TrainingArguments(transformers.TrainingArguments):
     
 def jsonl_load(data_path):
     """Load a .jsonl file into a dictionary."""
-    filepaths = [os.path.join(data_path, filename) for filename in os.listdir(data_path) if f.endswith('.jsonl')]    
+    filepaths = [os.path.join(data_path, filename) for filename in os.listdir(data_path) if filename.endswith('.jsonl')]    
     src_dict_ls = []
     for filepath in filepaths:
         lang = os.path.basename(filepath).split(".")[0]

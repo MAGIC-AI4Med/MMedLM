@@ -1,10 +1,10 @@
 #!/bin/bash
 #SBATCH -J LoRA_fintuning
-#SBATCH -p GPU-8A100          # 指定分区
-#SBATCH --nodes=1            # 节点数
-#SBATCH --ntasks=1           # 任务数
-#SBATCH --qos=gpu_8a100      # 指定QoS
-#SBATCH --gres=gpu:4       # 指定GPU资源
+#SBATCH -p GPU-8A100
+#SBATCH --nodes=1 
+#SBATCH --ntasks=1
+#SBATCH --qos=gpu_8a100 
+#SBATCH --gres=gpu:4
 #SBATCH --cpus-per-task=8
 #SBATCH --mem-per-cpu=24G
 
