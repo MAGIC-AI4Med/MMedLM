@@ -37,12 +37,17 @@ For dependencies, we used Pytorch 1.13 and Transformers 4.37. For LoRA fine-tune
 We provide all the code used for further training on MMedC. The codes are in the `pretrain` folder. You can check the [documentation](./pretrain/README.md) in the folder for how to use the codes.
 
 * Note that this step requires at least 8 A100 80GB GPUs and training for over a month.
+
 ### Fine-tuning on MMedBench Trainset
 We provide all the code used for fine-tuning. We support 2 fine-tuning methods: Full-Model Fine-tuning and PEFT Fine-Tuning.  Both codes are in the `finetune` folder. You can check the [documentation](./finetune/README.md) in the folder for how to use the codes.
 
+
+### Inference on MMedBench Testset
+We provide the code used for inference on MMedBench Testset. The codes are in the `pretrain` folder. You can check the [documentation](./inference/README.md) in the folder for how to use the codes.
+
+
 ### Data Collection Pipeline
 We also release our Data Collection Pipeline, including codes of data filtering and Textbooks OCR. For OCR, you may need to install some extra dependencies. Please check out the **data_collection** folder for more details.
-
 
 ## Results
 Here we show the main results of models' performance on MMedBench. For more details, please check out our [paper](https://arxiv.org/abs/2402.13963).
