@@ -18,6 +18,8 @@ In this paper, we aim to develop an open-source, multilingual language model for
 ![](assets/overview.png)
 
 ## News
+[2023.2.21] Our leaderboard web can be found [here](https://henrychur.github.io/MultilingualMedQA/). We look forward to more superior efforts in multilingual medical LLMs!.
+
 [2024.2.21] Our pre-print paper is released ArXiv. Dive into our findings [here](https://arxiv.org/abs/2402.13963).
 
 [2024.2.20] We release [MMedLM](https://huggingface.co/Henrychur/MMedLM) and [MMedLM 2](https://huggingface.co/Henrychur/MMedLM2). With an auto-regressive continues training on MMedC, these models achieves superior performance compared to all other open-source models, even rivaling GPT-4 on MMedBench.
@@ -25,7 +27,7 @@ In this paper, we aim to develop an open-source, multilingual language model for
 [2023.2.20] We release [MMedC](https://huggingface.co/datasets/Henrychur/MMedC), a multilingual medical corpus containing 25.5B tokens.
 
 [2023.2.20] We release [MMedBench](https://huggingface.co/datasets/Henrychur/MMedBench), a new multilingual medical multi-choice question-answering
-benchmark with rationale. Check out the leaderboard [here](https://henrychur.github.io/MultilingualMedQA/).
+benchmark with rationale. 
 
 
 ## Usage
