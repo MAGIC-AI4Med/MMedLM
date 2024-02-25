@@ -9,6 +9,13 @@
 
 The official codes for "Towards Building Multilingual Language Model for Medicine".
 
+[Paper](https://arxiv.org/abs/2402.13963)
+
+[Leaderboard](https://henrychur.github.io/MultilingualMedQA/)
+
+Models: [MMedLM](https://huggingface.co/Henrychur/MMedLM),[MMedLM 2](https://huggingface.co/Henrychur/MMedLM2)
+
+Datasets: [MMedC](https://huggingface.co/datasets/Henrychur/MMedC),[MMedBench](https://huggingface.co/datasets/Henrychur/MMedBench)
 ## Introduction
 In this paper, we aim to develop an open-source, multilingual language model for medicine. In general, we present the contribution from the following aspects: 
 1. **Corpus dataset.** For multilingual medical-specific adaptation, we construct a new multilingual medical corpus, that contains approximately 25.5B tokens encompassing 6 main languages, termed as MMedC, that enables auto-regressive training for existing general LLMs. 
