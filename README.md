@@ -13,7 +13,7 @@ The official codes for "Towards Building Multilingual Language Model for Medicin
 
 [Leaderboard](https://henrychur.github.io/MultilingualMedQA/)
 
-Models: [MMedLM](https://huggingface.co/Henrychur/MMedLM),[MMedLM 2](https://huggingface.co/Henrychur/MMedLM2)
+Models: [MMedLM-7B](https://huggingface.co/Henrychur/MMedLM),[MMedLM 2-7B](https://huggingface.co/Henrychur/MMedLM2),[MMedLM 2-1.8B](https://huggingface.co/Henrychur/MMedLM2-1.8B)
 
 Datasets: [MMedC](https://huggingface.co/datasets/Henrychur/MMedC),[MMedBench](https://huggingface.co/datasets/Henrychur/MMedBench)
 ## Introduction
