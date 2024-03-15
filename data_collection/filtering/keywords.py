@@ -70,7 +70,7 @@ zh_medical_words = [
     "疫情控制", "预防接种", "抗生素", "病人护理", "健康检查", "药物滥用", "公共卫生", "遗传研究", "心脏手术", "疫苗疫苗"
 ]
 
-sp_medical_biology_words = [
+es_medical_biology_words = [
     "Biología", "Médico", "Célula", "Gen", "ADN", "ARN", "Proteína", "Enzima", "Virus", "Bacteria",
     "Microorganismo", "Organismo", "Evolución", "Herencia", "Mutación", "Replicación", "Transcripción",
     "Traducción", "Genoma", "Cromosoma", "Mutante", "Clonación", "Genética", "Genotipo", "Fenotipo",
@@ -89,7 +89,7 @@ sp_medical_biology_words = [
     "Mutación", "Replicación del ADN", "Mutágeno", "ADN recombinante"
 ]
 
-sp_medical_words = [
+es_medical_words = [
     "Medicina", "Paciente", "Enfermedad", "Diagnóstico", "Tratamiento", "Cirugía", "Hospital", "Doctor", "Enfermera", "Farmacia",
     "Receta", "Síntoma", "Terapia", "Medicamento", "Cuidado", "Salud", "Lesión", "Consulta", "Especialista", "Radiografía",
     "Análisis", "Laboratorio", "Epidemia", "Virus", "Bacteria", "Infección", "Inmunización", "Vacuna", "Prevención", "Rehabilitación",
@@ -156,4 +156,45 @@ jp_medical_words = [
     "細胞分裂", "細胞増殖", "免疫系", "抗体", "免疫反応", "インフルエンザ", "HIV", "白血球", "赤血球", "血小板", "血漿", 
     "血液型", "血液凝固", "血糖", "血液循環", "全身麻酔", "局所麻酔", "鎮痛剤", "抗生物質", "抗炎症薬", "抗がん剤", "胃薬", 
     "鎮静剤", "解熱剤", "疼痛", "癌", "腫瘍", "転移", "化学療法", "放射線療法", "手術室", "看護師", "循環器", "消化器", "呼吸器"
+]
+
+en_medical_biology_words = [
+    "Cell", "Gene", "DNA", "Protein", "Virus", "Bacteria", "Infection", "Immune", 
+    "Antibody", "Vaccine", "Tissue", "Organ", "Brain", "Heart", "Lung", "Kidney", 
+    "Liver", "Blood", "Hormone", "Enzyme", "Metabolism", "Cancer", "Tumor", "Therapy", 
+    "Diagnosis", "Treatment", "Surgery", "Radiation", "Chemotherapy", "Biopsy", 
+    "Pathogen", "Antibiotic", "Inflammation", "Symptom", "Disease", "Chronic", 
+    "Acute", "Genetic", "Mutation", "Chromosome", "RNA", "Stem Cell", "Transplant", 
+    "Clinical", "Trial", "Research", "Study", "Publication", "Laboratory", 
+    "Microscope", "Sample", "Data", "Analysis", "Finding", "Conclusion", 
+    "Hypothesis", "Experiment", "Methodology", "Control", "Variable", "Statistics", 
+    "Result", "Interpretation", "Review", "Article", "Journal", "Peer", 
+    "Reviewer", "Collaboration", "Conference", "Presentation", "Abstract", "Poster", 
+    "Grant", "Funding", "Ethics", "Consent", "Privacy", "Data Protection", 
+    "Regulation", "Compliance", "Standard", "Protocol", "Guideline", "Policy", 
+    "Recommendation", "Best Practice", "Innovation", "Technology", "Biotechnology", 
+    "Nanotechnology", "Pharmacology", "Drug", "Medicine", "Prescription", 
+    "Dosage", "Side Effect", "Efficacy", "Safety", "Approval"
+]
+
+
+en_medical_words = [
+    "Health", "Patient", "Disease", "Treatment", "Doctor", "Medicine", 
+    "Hospital", "Diagnosis", "Surgery", "Care", "Therapy", "Symptoms", 
+    "Prescription", "Nurse", "Infection", "Pain", "Illness", "Recovery", 
+    "Vaccine", "Emergency", "Clinical", "Test", "Cancer", "Heart", "Blood", 
+    "Medication", "Procedure", "Virus", "Research", "Therapy", "Condition", 
+    "Prevention", "Health", "Imaging", "Laboratory", "Chronic", "Acute", 
+    "Therapy", "Recovery", "Mental", "Physical", "Allergy", "Nutrition", 
+    "Exercise", "Sleep", "Stress", "Depression", "Anxiety", "Obesity", 
+    "Diabetes", "Hypertension", "Asthma", "Arthritis", "Inflammation", 
+    "Immune", "Neurology", "Psychiatry", "Radiology", "Oncology", "Pediatrics", 
+    "Geriatrics", "Surgery", "Cardiology", "Gynecology", "Orthopedics", 
+    "Dermatology", "Endocrinology", "Urology", "Ophthalmology", "ENT", 
+    "Rehabilitation", "Anesthesia", "Antibiotics", "Infection", "Wound", 
+    "Fracture", "Transplant", "Biopsy", "Ultrasound", "MRI", "CT Scan", 
+    "X-ray", "Blood Pressure", "Cholesterol", "Vaccine", "Epidemic", 
+    "Pandemic", "Hygiene", "Sanitation", "Disinfect", "Sterilize", "Microbe", 
+    "Bacteria", "Virus", "Fungi", "Parasite", "Pathogen", "Antibody", 
+    "Antigen", "Genome"
 ]
