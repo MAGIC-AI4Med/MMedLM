@@ -13,7 +13,7 @@ The official codes for "Towards Building Multilingual Language Model for Medicin
 
 [Leaderboard](https://henrychur.github.io/MultilingualMedQA/)
 
-Models: [MMedLM-7B](https://huggingface.co/Henrychur/MMedLM),[MMedLM 2-7B](https://huggingface.co/Henrychur/MMedLM2),[MMedLM 2-1.8B](https://huggingface.co/Henrychur/MMedLM2-1.8B)
+Models: [MMedLM-7B](https://huggingface.co/Henrychur/MMedLM), [MMedLM 2-7B](https://huggingface.co/Henrychur/MMedLM2), [MMedLM 2-1.8B](https://huggingface.co/Henrychur/MMedLM2-1.8B), [MMed-Llama 3-8B](https://huggingface.co/Henrychur/MMed-Llama-3-8B), [MMed-Llama3-8B-EnIns](https://huggingface.co/Henrychur/MMed-Llama-3-8B-EnIns)
 
 Datasets: [MMedC](https://huggingface.co/datasets/Henrychur/MMedC),[MMedBench](https://huggingface.co/datasets/Henrychur/MMedBench)
 ## Introduction
@@ -25,10 +25,11 @@ In this paper, we aim to develop an open-source, multilingual language model for
 ![](assets/overview.png)
 
 ## News
+[2024.5.24] ![](./assets/new.gif) We release [MMed-Llama 3-8B](https://huggingface.co/Henrychur/MMed-Llama-3-8B) and [MMed-Llama3-8B-EnIns](https://huggingface.co/Henrychur/MMed-Llama-3-8B-EnIns). MMed-Llama 3 is based on Llama 3 and futher pretrained on MMedC, and MMed-Llama 3 EnIns is a fine-tuned version with additional English instructions (from PMC-LLaMA).
 
-[2023.3.1]  We release [MMedLM 2-1.8B](https://huggingface.co/Henrychur/MMedLM2-1.8B), a 1.8B light-weight model based on InternLM 2-1.8B. With an auto-regressive continues training on MMedC, MMedLM 2-1.8B can exceed the performance of most 7B models, including InternLM and LLaMA 2. 
+[2024.3.1]  We release [MMedLM 2-1.8B](https://huggingface.co/Henrychur/MMedLM2-1.8B), a 1.8B light-weight model based on InternLM 2-1.8B. With an auto-regressive continues training on MMedC, MMedLM 2-1.8B can exceed the performance of most 7B models, including InternLM and LLaMA 2. 
 
-[2023.2.21] Our leaderboard web can be found [here](https://henrychur.github.io/MultilingualMedQA/). We look forward to more superior efforts in multilingual medical LLMs!.
+[2024.2.21] Our leaderboard web can be found [here](https://henrychur.github.io/MultilingualMedQA/). We look forward to more superior efforts in multilingual medical LLMs!.
 
 [2024.2.21] Our pre-print paper is released ArXiv. Dive into our findings [here](https://arxiv.org/abs/2402.13963).
 
@@ -62,7 +63,24 @@ We provide the code used for inference on MMedBench Testset. The codes are in th
 ### Data Collection Pipeline
 We also release our Data Collection Pipeline, including codes of data filtering and Textbooks OCR. For OCR, you may need to install some extra dependencies. Please check out the **data_collection** folder for more details.
 
-## Results
+## Results on Commonly-used English Benchmarks
+Here, we incorporate the additional English instructions (from PMC-LLaMA) into MMed-Llama\ 3 finetuning, 
+and present a comparison between our model and other existing LLMs on various English benchmarks.
+
+| Method              | Size | Year    | MedQA    | MedMCQA  | PubMedQA | MMLU_CK  | MMLU_MG  | MMLU_AN  | MMLU_PM  | MMLU_CB  | MMLU_CM  | Avg.      |
+| ------------------- | ---- | ------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | --------- |
+| MedAlpaca           | 7B   | 2023.3  | 41.7     | 37.5     | 72.8     | 57.4     | 69.0     | 57.0     | 67.3     | 65.3     | 54.3     | 58.03     |
+| PMC-LLaMA           | 13B  | 2023.9  | 56.4     | 56.0     | 77.9     | -        | -        | -        | -        | -        | -        | -         |
+| MEDITRON            | 7B   | 2023.11 | 57.2     | 59.2     | 74.4     | 64.6     | 59.9     | 49.3     | 55.4     | 53.8     | 44.8     | 57.62     |
+| Mistral             | 7B   | 2023.12 | 50.8     | 48.2     | 75.4     | 68.7     | 71.0     | 55.6     | 68.4     | 68.1     | 59.5     | 62.97     |
+| Gemma               | 7B   | 2024.2  | 47.2     | 49.0     | 76.2     | 69.8     | 70.0     | 59.3     | 66.2     | **79.9** | 60.1     | 64.19     |
+| BioMistral          | 7B   | 2024.2  | 50.6     | 48.1     | 77.5     | 59.9     | 64.0     | 56.5     | 60.4     | 59.0     | 54.7     | 58.97     |
+| Llama 3             | 8B   | 2024.4  | 60.9     | 50.7     | 73.0     | **72.1** | 76.0     | 63.0     | 77.2     | **79.9** | 64.2     | 68.56     |
+| MMed-Llama 3~(Ours) | 8B   | -       | **65.4** | **63.5** | **80.1** | 71.3     | **85.0** | **69.6** | **77.6** | 74.3     | **66.5** | **72.59** |
+
+
+
+## Results on MMedBench
 Here we show the main results of models' performance on MMedBench. For more details, please check out our [paper](https://arxiv.org/abs/2402.13963).
 
 ### Accuracy(%)
@@ -83,6 +101,7 @@ Here we show the main results of models' performance on MMedBench. For more deta
 | MMedLM (Ours)    | 7B   | -       | &#10003; | trainset  | 49.88          | 70.49          | 46.23          | 36.66          | 72.27          | 54.52          | 55.01          |
 | MMedLM 2(Ours) | 7B   | -       | &#10003; | trainset  | 61.74 | 80.01 | 61.81 | 52.09 | 80.47 | 67.65 | 67.30 |
 | MMedLM 2(Ours) | 1.8B | -       | &#10003; | trainset  | 45.40 | 66.78 | 42.21 | 25.56 | 69.14 | 43.40 | 48.75 |  
+|MMed-Llama 3(Ours)|8B |-      | &#10003; | trainset  |  66.06| 79.25 | 61.81 | 55.63 | 75.39 | 68.38 | 67.75 |
 
 - GPT and Gemini is evluated under zero-shot setting through API
 - Open-source models first undergo training on the trainset of MMedBench before evaluate. 
@@ -108,17 +127,13 @@ Here we show the main results of models' performance on MMedBench. For more deta
 its domain knowledge to identify these findings as indicative of toxic tubulointerstitial nephritis, leading to a
 precise diagnosis. 
 
-## TODO
-- [x] Add documentation and code for model usage
-- [x] Add the Model Card
-- [x] Add the Dataset Card
-
-
 
 ## Acknowledgement
 PMC-LLaMA -- https://github.com/chaoyi-wu/PMC-LLaMA
 
 InternLM -- https://github.com/InternLM/InternLM
+
+Llama 3 -- https://llama.meta.com/llama3/
 
 ## Contact
 If you have any question, please feel free to contact qiupengcheng@pjlab.org.cn.
