@@ -123,9 +123,10 @@ Here we show the main results of models' performance on MMedBench. For more deta
 ### Case Study
 
 ![](assets/case1.png)
-- A case between InternLM and MMedLM. MMedLM demonstrates superior performance in selecting the correct option. Furthermore, MMedLM frequently justifies its choices with accurate reasons. MMedLM accurately diagnoses ‘eosinophilic infiltration in the renal biopsy,’ subsequently applying
-its domain knowledge to identify these findings as indicative of toxic tubulointerstitial nephritis, leading to a
-precise diagnosis. 
+- A case between Llama 3 and MMed-Llama 3. MMed-Llama 3 demonstrates superior performance in selecting the correct option. Furthermore, MMed-Llama 3 accurately diagnoses the presence of
+‘eosinophilic infiltration’ and ‘diffuse parenchymal inflammation on renal biopsy’, subsequently applying its
+domain knowledge to identify these findings as indicative of ‘tubulointerstitial nephritis’, leading to a precise
+diagnosis.
 
 
 ## Acknowledgement
