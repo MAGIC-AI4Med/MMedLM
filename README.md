@@ -11,7 +11,7 @@ The official codes for "Towards Building Multilingual Language Model for Medicin
 
 [Paper (Arxiv version)](https://arxiv.org/abs/2402.13963)
 
-[Paper (Nature Communication)](https://www.nature.com/articles/s41467-024-52417-z.epdf?sharing_token=t6FkRunG38qeue-91C1E2tRgN0jAjWel9jnR3ZoTv0PHE8OiMxkk0P00lVODQzQfBgX9sBFjXifR70ThL8H_p3iEav2wCkBQfQ2BqlfeLhVMUj4vneEY60SJA7NrkIsy1yxu42sFE9kixu2MwDuIBMM2EEW63gPr5tuD7V3hEMg%3D)
+[Paper (Nature Communications)](https://www.nature.com/articles/s41467-024-52417-z)
 
 [Leaderboard](https://henrychur.github.io/MultilingualMedQA/)
 
@@ -27,7 +27,7 @@ In this paper, we aim to develop an open-source, multilingual language model for
 ![](assets/overview.png)
 
 ## News
-[2024.9.27] Our paper has been accepted by Nature Communication!
+[2024.9.27] Our paper has been accepted by Nature Communications!
 
 [2024.5.24] ![](./assets/new.gif) We release [MMed-Llama 3-8B](https://huggingface.co/Henrychur/MMed-Llama-3-8B) and [MMed-Llama3-8B-EnIns](https://huggingface.co/Henrychur/MMed-Llama-3-8B-EnIns). MMed-Llama 3 is based on Llama 3 and futher pretrained on MMedC, and MMed-Llama 3 EnIns is a fine-tuned version with additional English instructions (from PMC-LLaMA).
 
