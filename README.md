@@ -7,7 +7,7 @@
 </div>
 
 
-The official codes for "Towards Building Multilingual Language Model for Medicine".
+[Nature Communications] The official codes for "Towards Building Multilingual Language Model for Medicine".
 
 [Paper (Arxiv version)](https://arxiv.org/abs/2402.13963)
 
