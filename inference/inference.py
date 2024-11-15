@@ -115,7 +115,7 @@ def inference(test_filepath, model, tokenizer, save_dir, is_with_rationale):
         input_str = [
             data_entry['pmc_input']
         ]
-        output_str = inference_on_one(input_str)
+        output_str = inference_on_one(input_str, model, tokenizer)
         response = output_str.split("### Response:")[1].strip()
         answers.append((response.replace("\n", ""), data_entry['pmc_output'], data_entry['rationale']))
         
