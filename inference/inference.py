@@ -107,7 +107,7 @@ def prepare_data(data_list: Sequence[dict]) -> Sequence[dict]:
 
 def inference(test_filepath, model, tokenizer, save_dir, is_with_rationale):
     data_list = read_jsonl(test_filepath, is_with_rationale)
-    data_list = prepare_data(data_list, model, tokenizer)
+    data_list = prepare_data(data_list)
     answers = []
     for _idx in tqdm(range(len(data_list))):
         data_entry = data_list[_idx]
