@@ -15,7 +15,7 @@
 
 [Leaderboard](https://henrychur.github.io/MultilingualMedQA/)
 
-Models: [MMedLM-7B](https://huggingface.co/Henrychur/MMedLM), [MMedLM 2-7B](https://huggingface.co/Henrychur/MMedLM2), [MMedLM 2-1.8B](https://huggingface.co/Henrychur/MMedLM2-1.8B), [MMed-Llama 3-8B](https://huggingface.co/Henrychur/MMed-Llama-3-8B), [MMed-Llama3-8B-EnIns](https://huggingface.co/Henrychur/MMed-Llama-3-8B-EnIns)
+Models: [MMedLM-7B](https://huggingface.co/Henrychur/MMedLM), [MMedLM 2-7B](https://huggingface.co/Henrychur/MMedLM2), [MMedLM 2-1.8B](https://huggingface.co/Henrychur/MMedLM2-1.8B), [MMed-Llama 3-8B](https://huggingface.co/Henrychur/MMed-Llama-3-8B), [MMed-Llama3-8B-EnIns](https://huggingface.co/Henrychur/MMed-Llama-3-8B-EnIns), [MMed-Llama3.1-70B](https://huggingface.co/Henrychur/MMed-Llama3.1-70B)
 
 Datasets: [MMedC](https://huggingface.co/datasets/Henrychur/MMedC),[MMedBench](https://huggingface.co/datasets/Henrychur/MMedBench)
 ## Introduction
@@ -27,6 +27,8 @@ In this paper, we aim to develop an open-source, multilingual language model for
 ![](assets/overview.png)
 
 ## News
+[202.5.3.7] We release [MMed-Llama3.1-70B](https://huggingface.co/Henrychur/MMed-Llama3.1-70B). With an aoto-regressive continues training on the newest MMedC, this model achieves superior performance compared to GPT-4 and supports 8 main languages. More details are coming soon.
+
 [2024.9.27] Our paper has been accepted by Nature Communications!
 
 [2024.5.24] ![](./assets/new.gif) We release [MMed-Llama 3-8B](https://huggingface.co/Henrychur/MMed-Llama-3-8B) and [MMed-Llama3-8B-EnIns](https://huggingface.co/Henrychur/MMed-Llama-3-8B-EnIns). MMed-Llama 3 is based on Llama 3 and futher pretrained on MMedC, and MMed-Llama 3 EnIns is a fine-tuned version with additional English instructions (from PMC-LLaMA).
