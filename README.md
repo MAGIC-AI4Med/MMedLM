@@ -27,7 +27,7 @@ In this paper, we aim to develop an open-source, multilingual language model for
 ![](assets/overview.png)
 
 ## News
-[202.5.3.7] ![](./assets/new.gif) We release [MMed-Llama3.1-70B](https://huggingface.co/Henrychur/MMed-Llama3.1-70B). With an aoto-regressive continues training on the newest MMedC, this model achieves superior performance compared to GPT-4 and supports 8 main languages. More details are coming soon.
+[202.5.3.7] ![](./assets/new.gif) We release [MMed-Llama3.1-70B](https://huggingface.co/Henrychur/MMed-Llama3.1-70B), a new 70B **medical multilingual medical foundation model** based on LLama3.1-70B. With an aoto-regressive continues training on the newest MMedC, this model(80.51) achieves superior performance compared to GPT-4(74.27) and supports 8 main languages.
 
 [2024.9.27] Our paper has been accepted by Nature Communications!
 
@@ -111,6 +111,7 @@ Here we show the main results of models' performance on MMedBench. For more deta
 | MMedLM 2(Ours) | 7B   | -       | &#10003; | trainset  | 61.74 | 80.01 | 61.81 | 52.09 | 80.47 | 67.65 | 67.30 |
 | MMedLM 2(Ours) | 1.8B | -       | &#10003; | trainset  | 45.40 | 66.78 | 42.21 | 25.56 | 69.14 | 43.40 | 48.75 |  
 |MMed-Llama 3(Ours)|8B |-      | &#10003; | trainset  |  66.06| 79.25 | 61.81 | 55.63 | 75.39 | 68.38 | 67.75 |
+|MMed-Llama 3.1(Ours)|70B |-      | &#10003; | trainset  |  80.60| 87.71 | 76.88 | 73.47 | 82.03 | 82.35 |  80.51|
 
 - GPT and Gemini is evluated under zero-shot setting through API
 - Open-source models first undergo training on the trainset of MMedBench before evaluate. 
